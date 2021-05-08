@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import screenshot from "@components/Screenshot.vue";
+import Screenshot from "@components/Screenshot.vue";
 
 export default {
   name: "Screenshot",
   components: {
-    screenshot,
+    Screenshot,
   },
 };
 </script>

@@ -45,16 +45,17 @@
 <script>
 import Vue from "vue";
 
-let crosshairs = "";
-let overlay = "";
-let tooltip = "";
-
-const TOOLTIP_MARGIN = +window
-  .getComputedStyle(document.querySelector(".tooltip"))
-  .margin.split("px")[0];
-
 export default {
+  name: "Screenshot",
   setup() {
+    let crosshairs = "";
+    let overlay = "";
+    let tooltip = "";
+
+    const TOOLTIP_MARGIN = +window
+      .getComputedStyle(document.querySelector(".tooltip"))
+      .margin.split("px")[0];
+
     const screenshot = new Vue({
       el: "#screenshot",
 
@@ -289,17 +290,10 @@ export default {
         },
       },
     });
-
+    // returning the const screenshot
     return { screenshot };
   },
 };
-
-// screenshot();
-// export default { screenshot };
-// export { screenshot };
-//   name: "Screenshot",
-//   props: { screenshot },
-// };
 </script>
 
 <style scoped>

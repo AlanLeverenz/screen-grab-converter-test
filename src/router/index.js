@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import Screenshot from "../views/Screenshot.vue";
+import Test from "../views/Test.vue";
+// import Screenshot from "../views/Screenshot.vue";
 
 const routes = [
   {
@@ -8,11 +9,15 @@ const routes = [
     name: "Home",
     component: Home,
   },
+  // {
+  //   path: "/screenshot",
+  //   name: "Screenshot",
+  //   component: Screenshot,
+  // },
   {
-    path: "/screenshot",
-    name: "Screenshot",
-    component: "Screenshot",
-    props: true,
+    path: "/test",
+    name: "Test",
+    component: Test,
   },
   {
     path: "/about",
