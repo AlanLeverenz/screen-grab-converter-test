@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/Home.vue";
+import Screenshot from "../views/Screenshot.vue";
 
 const routes = [
   {
@@ -11,6 +12,7 @@ const routes = [
     path: "/screenshot",
     name: "Screenshot",
     component: "Screenshot",
+    props: true,
   },
   {
     path: "/about",
