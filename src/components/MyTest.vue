@@ -1,12 +1,20 @@
 <template>
   <div class="test">
-    <h1>TEST</h1>
+    <h1>{{ tester }}</h1>
+    <p>{{ msg }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: "MyTest",
+  props: {
+    msg: String,
+  },
+  setup() {
+    const tester = "tess & alan";
+    return { tester };
+  },
 };
 </script>
 

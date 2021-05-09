@@ -1,6 +1,6 @@
 <template>
   <div class="test">
-    <MyTest />
+    <MyTest msg="We're the best testers, period!" />
   </div>
 </template>
 
