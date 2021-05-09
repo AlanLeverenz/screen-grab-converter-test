@@ -1,16 +1,16 @@
 <template>
   <div>
-    <Screenshot />
+    <MyShot />
   </div>
 </template>
 
 <script>
-import Screenshot from "@components/Screenshot.vue";
+import MyShot from "@components/MyShot.vue";
 
 export default {
   name: "Screenshot",
   components: {
-    Screenshot,
+    MyShot,
   },
 };
 </script>

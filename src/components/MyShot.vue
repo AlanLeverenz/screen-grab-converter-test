@@ -46,7 +46,7 @@
 import Vue from "vue";
 
 export default {
-  name: "Screenshot",
+  name: "MyShot",
   setup() {
     let crosshairs = "";
     let overlay = "";
@@ -56,7 +56,7 @@ export default {
       .getComputedStyle(document.querySelector(".tooltip"))
       .margin.split("px")[0];
 
-    const screenshot = new Vue({
+    const myScreenshot = new Vue({
       el: "#screenshot",
 
       data() {
@@ -291,7 +291,7 @@ export default {
       },
     });
     // returning the const screenshot
-    return { screenshot };
+    return { myScreenshot };
   },
 };
 </script>
