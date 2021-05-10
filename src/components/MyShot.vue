@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import Vue from "vue";
+// import Vue from "vue";
 
 let crosshairs = "";
 let overlay = "";
@@ -279,7 +279,7 @@ export default {
       this.tookScreenShot = false;
     },
 
-    mouseUp: function (e) {
+    mouseUp: function () {
       this.borderWidth = 0;
 
       if (this.isDragging) {
