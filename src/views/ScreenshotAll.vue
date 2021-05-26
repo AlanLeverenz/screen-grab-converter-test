@@ -49,9 +49,11 @@
 // let overlay = "";
 let tooltip = "";
 
-const TOOLTIP_MARGIN = +window
-  .getComputedStyle(document.querySelector(".tooltip"))
-  .margin.split("px")[0];
+// const TOOLTIP_MARGIN = +window
+//   .getComputedStyle(document.querySelector(".tooltip"))
+//   .margin.split("px")[0];
+
+const TOOLTIP_MARGIN = 6;
 
 export default {
   name: "ScreenshotAll",
