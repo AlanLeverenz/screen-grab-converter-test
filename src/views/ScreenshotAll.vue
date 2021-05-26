@@ -43,10 +43,6 @@
 </template>
 
 <script>
-// import Vue from "vue";
-
-// let crosshairs = "";
-// let overlay = "";
 let tooltip = "";
 
 // const TOOLTIP_MARGIN = +window
@@ -84,6 +80,9 @@ export default {
 
       windowHeight: 0,
       windowWidth: 0,
+
+      crosshairs: null,
+      overlay: null,
     };
   },
 
