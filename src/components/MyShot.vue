@@ -56,16 +56,16 @@ const TOOLTIP_MARGIN = +window
 export default {
   name: "MyShot",
   // setup() {
-  // let crosshairs = "";
-  // let overlay = "";
-  // let tooltip = "";
+  //   let crosshairs = "";
+  //   let overlay = "";
+  //   let tooltip = "";
 
-  // const TOOLTIP_MARGIN = +window
-  //   .getComputedStyle(document.querySelector(".tooltip"))
-  //   .margin.split("px")[0];
-
+  //   const TOOLTIP_MARGIN = +window
+  //     .getComputedStyle(document.querySelector(".tooltip"))
+  //     .margin.split("px")[0];
+  // },
   // const myScreenshot = new Vue({
-  el: "#screenshot",
+  // el: "#screenshot",
 
   data() {
     return {
@@ -289,11 +289,10 @@ export default {
       this.isDragging = false;
       this.mouseIsDown = false;
     },
-    // },
-    // });
-    // returning the const screenshot
-    // return { myScreenshot };
   },
+  // });
+  // returning the const screenshot
+  // return { myScreenshot };
 };
 </script>
 
