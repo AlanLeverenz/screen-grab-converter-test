@@ -43,6 +43,8 @@
 </template>
 
 <script>
+import html2canvas from "html2canvas";
+
 let tooltip = "";
 
 // const TOOLTIP_MARGIN = +window
@@ -278,6 +280,30 @@ export default {
 
       this.isDragging = false;
       this.mouseIsDown = false;
+    },
+
+    takeScreenshot: function () {
+      html2canvas(document.querySelector("body")).then((canvas) => {
+        let croppedCanvas = document.createElement("canvas"),
+          croppedCanvasContext = croppedCanvas.getContext("2d");
+
+        croppedCanvas.width = this.croppedImageWidth;
+        croppedCanvas.height = this.croppedImageHeight;
+
+        croppedCanvasContext.drawImage(
+          canvas,
+          this.startX,
+          this.startY,
+          this.croppedImageWidth,
+          this.croppedImageHeight,
+          0,
+          0,
+          this.croppedImageWidth,
+          this.croppedImageHeight
+        );
+
+        this.imageUrl = croppedCanvas.toDataURL();
+      });
     },
   },
 };
