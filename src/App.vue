@@ -1,10 +1,6 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <!-- <router-link to="/screenshot">Screenshot</router-link> | -->
-    <router-link to="/screenshotall">ScreenshotAll</router-link> |
-    <router-link to="/test">Test</router-link>
+  <div>
+    <h1>TAKE A SCREENSHOT</h1>
   </div>
   <router-view />
 </template>
