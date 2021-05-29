@@ -43,7 +43,10 @@
 </template>
 
 <script>
-import html2canvas from "html2canvas";
+// import html2canvas from "html2canvas";
+import VueHtml2Canvas from "vue-html2canvas";
+
+// Vue.use(VueHtml2Canvas);
 
 let tooltip = "";
 
@@ -283,7 +286,8 @@ export default {
     },
 
     takeScreenshot: function () {
-      html2canvas(document.querySelector("body")).then((canvas) => {
+      // html2canvas(document.querySelector("body")).then((canvas) => {
+      VueHtml2Canvas(document.querySelector("body")).then((canvas) => {
         let croppedCanvas = document.createElement("canvas"),
           croppedCanvasContext = croppedCanvas.getContext("2d");
 
